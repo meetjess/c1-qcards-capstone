@@ -1,0 +1,368 @@
+/* General Formatting, including some buttons */
+body {
+	background: rgb(254,156,216);
+	background: radial-gradient(circle, rgba(254,156,216,1) 0%, rgba(147,213,251,1) 100%);
+	background-position: 0px;
+  font-family: Poppins, sans-serif;
+  margin: 0;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.quiz-create,
+.quiz-container button,
+.savebutton {
+  padding: 8px 15px;
+  margin: 15px;
+  border-radius: 8px;
+  border: solid white 2px;
+  color: white;
+  width: fit-content;
+  text-decoration: none;
+  background-color: #fb6bdf;
+}
+
+.quiz-create:hover,
+.quiz-container button:hover,
+.savebutton:hover {
+  background-color: #f940d4;
+}
+
+.tri-split-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* Navigation & Dashboard */
+
+.dashboard-container {
+  background-color: aliceblue;
+  padding: 20px;
+	width: 60%;
+	margin: 0 auto;
+  background-color: rgba(230, 230, 230, 0.443);
+  box-shadow: -8px 5px 5px rgba(60, 50, 80, 0.104);
+}
+
+.q-logo {
+  height: 100px;
+  margin: 15px;
+}
+
+.navigation-bar {
+  margin: 10px 0 25px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  /* background-color: #d2dce7; */
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 15px;
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  box-shadow: -8px 5px 5px rgba(60, 50, 80, 0.032);
+  font-size: 1.2rem;
+  font-weight: bold;
+	display: inline-block;
+}
+
+/* Create a Card Page - Forms */
+.form-input {
+  width: 70%;
+  min-width: 30px;
+  margin: 0px auto;
+  font-size: 1rem;
+  height: 2rem;
+  min-height: 30px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin: 0 8px;
+  color: rgb(21, 21, 21);
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 10px auto;
+  width: 450px;
+  padding: 20px 20px 10px 20px;
+  border-radius: 8px;
+  background-color: rgba(230, 230, 230, 0.443);
+  box-shadow: -8px 5px 5px rgba(60, 50, 80, 0.104);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  /* background-color: blue; */
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+select {
+  border: solid white 2px;
+}
+
+.editbtn-row button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid white 1px;
+  margin: 8px;
+}
+
+.cardinfo,
+.edit-form {
+  width: 435px;
+  height: fit-content;
+  background-color: rgb(226, 226, 226);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-size: 1rem;
+  box-shadow: -8px 5px 5px rgba(60, 50, 80, 0.104);
+}
+
+/* Card Gallery (in Create a Card) */
+
+.gallery-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 10px 0 10px 0;
+	}
+
+.card-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+  margin: 0 auto;
+	gap: 20px;
+}
+
+input,
+textarea {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.pinkbold {
+  font-weight: bold;
+  color: rgb(253, 61, 157);
+}
+
+.edit-form input {
+  margin: 0 10px 0 0;
+}
+
+/* Quiz Page */
+
+.quiz-card {
+  width: 50%;
+  min-width: 400px;
+  height: fit-content;
+  min-height: 460px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 4px;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px 5px 5px rgba(60, 50, 80, 0.104);
+}
+
+.quiz-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.quiz-row p {
+  max-width: 80%;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cancel-btn {
+  color: rgb(37, 37, 37);
+  background-color: #cccccc79;
+  border: solid white 1px;
+  border-radius: 4px;
+}
+
+.cancel-btn-container {
+  display: block;
+  justify-self: start;
+}
+
+.result-img {
+  width: 115px;
+}
+
+/* Missed Question Cards & Gallery */
+.missed-questions-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.missed-card {
+  background-color: rgba(230, 230, 230, 0.443);
+  box-shadow: -8px 5px 5px rgba(60, 50, 80, 0.104);
+  width: 375px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+	text-wrap: wrap;
+	height: fit-content;
+}
+
+.missed-card p {
+	text-wrap: wrap;
+}
+
+.correct-answer {
+  border: solid rgb(36, 174, 36) 2px;
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 7px;
+  font-weight: bold;
+  box-shadow: -8px 5px 5px rgba(60, 50, 80, 0.104);
+}
+
+/* Media Queries Time */
+
+@media screen and (max-width: 440px) {
+  .navigation-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+  }
+
+  nav a {
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 0.85rem;
+  }
+
+  .form-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px 20px 10px 20px;
+    border-radius: 8px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    padding: 5px;
+    line-height: 0.8;
+  }
+
+  .form-input {
+    width: 100%;
+    min-width: 200px;
+    font-size: 1rem;
+    margin: 0px auto;
+  }
+
+  .cardinfo,
+  .edit-form {
+    width: 80%;
+    min-width: 300px;
+    height: fit-content;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 1rem;
+  }
+
+  .edit-form input {
+    padding: 5px;
+    max-width: 290px;
+  }
+
+  .quiz-card {
+    width: 80%;
+    min-width: 300px;
+    height: fit-content;
+    min-height: 350px;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quiz-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .quiz-row p {
+    max-width: 300px;
+  }
+
+  .missed-questions-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 441px) {
+  .navigation-bar {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    text-wrap: wrap;
+  }
+
+}

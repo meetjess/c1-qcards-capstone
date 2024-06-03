@@ -76,6 +76,7 @@ export default function NewCard() {
 
 return (
   <>
+
     <div className="form-container">
       <form onSubmit={handleFormSubmit}>
         <div className="form-elements">
@@ -158,6 +159,8 @@ return (
         </div>
       </form>
     </div>
+
+
 		<div className="gallery-container">
     <div className="card-gallery">
       <EditableCard cards={cards} fetchCards={fetchCards} />

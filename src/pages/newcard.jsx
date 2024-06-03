@@ -76,10 +76,6 @@ export default function NewCard() {
 
 return (
   <>
-		<div className="tri-split-container">
-		<div className="left-container">
-
-		</div>
     <div className="form-container">
       <form onSubmit={handleFormSubmit}>
         <div className="form-elements">
@@ -162,11 +158,6 @@ return (
         </div>
       </form>
     </div>
-
-		<div className="right-container">
-
-		</div>
-		</div>
 		<div className="gallery-container">
     <div className="card-gallery">
       <EditableCard cards={cards} fetchCards={fetchCards} />

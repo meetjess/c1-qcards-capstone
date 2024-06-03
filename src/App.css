@@ -302,7 +302,7 @@ textarea {
 
   .form-input {
     width: 100%;
-    min-width: 200px;
+    min-width: 100px;
     font-size: 1rem;
     margin: 0px auto;
   }
